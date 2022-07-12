@@ -15,9 +15,9 @@
 
 ### Contact with me 📝
 
-[<img align="left" alt="muhendisherif.com" height="30px" src="https://cdn-icons-png.flaticon.com/512/1150/1150626.png" />][website]3
-[<img align="left" alt="muhendisherif | Discord" height="30px" src="https://image.flaticon.com/icons/png/512/356/356060.png"/>][discord]
-[<img align="left" alt="muhendisherif | Spotify" height="30px" src="https://cdn-icons-png.flaticon.com/512/408/408697.png" />][Spotify]
+[<img align="left" alt="hostingturkiye.com.tr" height="30px" src="https://cdn-icons-png.flaticon.com/512/1150/1150626.png" />][website]3
+[<img align="left" alt="SpaceEA | Discord" height="30px" src="https://image.flaticon.com/icons/png/512/356/356060.png"/>][discord]
+[<img align="left" alt="SpaceEA | Spotify" height="30px" src="https://cdn-icons-png.flaticon.com/512/408/408697.png" />][Spotify]
 
 <br />
 
