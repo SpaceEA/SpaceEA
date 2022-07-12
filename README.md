@@ -43,4 +43,43 @@
 [Spotify]: https://open.spotify.com/user/h08wi83hv74a9coty964dlqw4
 
 
+
+require "hallon"
+
+# Get an application key from Spotify (the binary kind), from [here](https://developer.spotify.com/en/libspotify/application-key/)
+# The binary kind.
+session = Hallon::Session.initialize(IO.read("a0cc8734ed884a1b9f7576a917b3b8d0"))
+
+# User you login credentials
+session.login!("junkiesxl", "not really my password so please don't even try")
+
+# Enter the URI of the playlist you want to add songs to
+playlist = Hallon::Playlist.new("spotify:user:junkiesxl:playlist:2YF0zXj84fJvyBOCwEZtDf").load
+
+# Takes a artist name (string), and a `Hallon::Playlist` will try to
+# add the top songs of the artists to the playlist.
+def add_top_hits_of_artist(artist_name, playlist)
+  results = Hallon::Search.new(artist_name).load
+  artist = results.artists.first
+  if (!artist)
+    puts "Nothing found with #{artist_name}, did you mean #{results.did_you_mean}"
+    return
+  end
+
+  puts "Found #{artist.name}"
+
+  tracks = artist.browse.load.top_hits[0..15]
+  puts "  - has #{tracks.size} top hits"
+
+  playlist.insert(playlist.size, tracks).upload
+  puts "  - added to the playlist"
+end
+
+thursday.each do |artist_name|
+  add_top_hits_of_artist(artist_name, playlist)
+end
+
+
+
+
 ----
