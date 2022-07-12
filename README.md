@@ -2,7 +2,7 @@
 
 <img align="right" alt="GIF" height="160px" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" />
 
-## I'm an Electrical & Electronics Engineering Student 
+## I'm an computer and cyber security student
 
 - 👨‍💻 I’m currently working on web development technologies like JavaScrpit, PHP etc.
 - 📚 I’m currently learning everything about engineering software tools like MATLAB, AutoCAD. 
